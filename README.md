@@ -18,7 +18,7 @@ npx create-next-app --flipkart
 yarn create next-app --flipkart
 pnpm create next-app --flipkart
 ```
-install Tailwindcss
+Install `Tailwindcss`
 ```bash
 npm install -D tailwindcss postcss autoprefixer
 ```
@@ -26,20 +26,21 @@ generate `tailwind.config.js` file
 ```bash
 npx tailwindcss init -p
 ```
-add this to tailwind.cofig.js
+Add this to `tailwind.cofig.js`
 ```bash
 content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
 ```
-add this to style/global.css
+Add this to `style/global.css`
 ```bash
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 Lets get started
+
 ```bash
 npm run dev
 ```
