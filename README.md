@@ -12,16 +12,36 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
+create Next App
 ```bash
 npx create-next-app --flipkart
-```
-
-```bash
 yarn create next-app --flipkart
-```
-
-```bash
 pnpm create next-app --flipkart
+```
+install Tailwindcss
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+generate `tailwind.config.js` file
+```bash
+npx tailwindcss init -p
+```
+add this to tailwind.cofig.js
+```bash
+content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+```
+add this to style/global.css
+```bash
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+Lets get started
+```bash
+npm run dev
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
